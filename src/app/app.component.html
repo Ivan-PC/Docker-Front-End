@@ -1,0 +1,30 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="jumbotron text-center">
+
+  <img src="../assets/pngegg.png" border="1" alt="Taller de intro a Docker..." width="180" height="150">
+  <h1>Docker Front-End App</h1>
+  <p>Taller de introduccion a Docker...!!</p>
+</div>
+
+<div class="col-md-offset-1 col-md-10 table-height-body">
+  <table class="table table-striped table-list table-bordered table-hover">
+    <thead>
+      <tr>
+        <th class="col-md-5">ID</th>
+        <th class="col-md-5">Name</th>
+      </tr>
+    </thead>
+      <tbody>
+          <tr *ngFor="let item of data">
+              <td>{{item._id}}</td>
+              <td>{{item.name}}</td>
+          </tr>
+      </tbody>
+      <tbody *ngIf="data.length==0">
+          <td colspan="10">
+              <p style="text-align: center;margin-top:10px;">No Hay registros</p>
+          </td>
+      </tbody>
+  </table>
+</div>
